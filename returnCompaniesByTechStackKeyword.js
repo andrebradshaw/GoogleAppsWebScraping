@@ -5,11 +5,11 @@ function grouped(e, n){
     return '';
   }
 }
-/*/
+/*/GOOGLE APPS SCRIPT
 this function will search the tech stack for a specified word & Log the faceted-company codes as an sudoarray for use in LinkedIn Searches. facetCurrentCompany= ["Logged","sudoarray","goes","here"]
 /*/
 function returnCompanyCodes() {
-  var id = '1-K2yKmAR9CaFmQSJUdeA2idQX7a_n5_ZtL8e-r4Le9Q'; //put your sheetID there
+  var id = '1-yourSHEETidGOEShere-r4Le9Q'; //put your sheetID there
   var ss = SpreadsheetApp.openById(id); 
   var searchterm = 'react'; //the keyword you wish to search goes here
   var locations = ["Austin2","SanFran2"];//the sheetnames you wish to search go here
