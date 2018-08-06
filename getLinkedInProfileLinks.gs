@@ -65,7 +65,7 @@ function ducky() {
         var link = grouped(/(www\.linkedin\.com%2Fin%2F.+?)(?:%2F|")/i.exec(matches), 1);
         s = searchMatches.length; 
         Logger.log(link);
-        s1.getRange((i+1), 5).setValue(link.replace(/%2F/g, '/'));
+        s1.getRange((i+1), 5).setValue(link.replace(/%2F/g, '/').replace(/%2D/gi, '-'));
       }
     }
   }
