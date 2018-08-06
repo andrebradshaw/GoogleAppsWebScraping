@@ -62,7 +62,7 @@ function ducky() {
     for(s=0; s<searchMatches.length; s++){
       var matches = searchMatches[s].toString();
       if(regXFname.test(matches) === true && regXLname.test(matches) === true && regXtitle.test(matches) === true && regXcompany.test(matches) === true){
-        var link = grouped(/(www\.linkedin\.com%2Fin%2F.+?)(?:%|")/i.exec(matches), 1);
+        var link = grouped(/(www\.linkedin\.com%2Fin%2F.+?)(?:%2F|")/i.exec(matches), 1);
         s = searchMatches.length; 
         Logger.log(link);
         s1.getRange((i+1), 5).setValue(link.replace(/%2F/g, '/'));
