@@ -69,11 +69,4 @@ function ducky() {
       }
     }
   }
-  
-
-
- // var matchedLink = grouped(/<h2 class="result__title">.+?href.+?(linkedin\.com%2Fin%2F.+?)"/i.exec(resp), 1);
- // s1.getRange(1, 5).setValue(matchedLink.replace(/%2F/g, '/'));
-
-
 }
